@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/startpage</title>
+    <link rel="stylesheet" href="static/styles/styles.css">
+	<link rel="icon" href="static/images/favicon.svg" type="image/svg+xml">
+	<script src="scripts/search_form.js"></script>
+	<script src="scripts/weather.js"></script>
+</head>
+<body>
+	<nav>
+		<h1>Welcome back!</h1>
+		<h2 id="date"></h2>
+		<form id="duckduckgo-search-form" action="https://duckduckgo.com/" method="get" autocomplete="off">
+			<input type="text" name="q" placeholder="Search with DuckDuckGo" autofocus>
+		</form>
+		<script type="text/javascript" src="scripts/get_date.js"></script>
+	
+		<ul>
+			<li>~/undecided <span class="icon"></span></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+		<ul>
+			<li>~/undecided <span class="icon"></span></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+		<ul>
+			<li>~/undecided <span class="icon">󱜅</span></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+		<ul>
+			<li>~/undecided <span class="icon"></span></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+	</nav>
+	
+	<script src="scripts/toggleNav.js"></script>
+	
+	<button class="openbtnlefttop" onclick="toggleNavleft()">&#9776;</button>
+	<button class="openbtnleftbottom" onclick="toggleNavleft()">&#9776;</button>
+	<button class="openbtnrighttop" onclick="toggleNavright()">&#9776;</button>
+	<button class="openbtnrightbottom" onclick="toggleNavright()">&#9776;</button>
+	
+	<!-- Left Sidebar -->
+	<div id="mySidepanel" class="sidepanel">
+		<!-- Fill with rarely used Shortcuts -->
+		<!-- in form <li><a href="link">DisplayName</a></li> -->
+		<li><a href=""></a></li>
+		<!-- Start adding below here-->
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</div>
+	
+	
+	<!-- Right Sidebar -->
+	<div id="SidepanelRight" class="sidepanelright">
+		<!-- Fill with rarely used Shortcuts -->
+		<!-- in form <li><a href="link">DisplayName</a></li> -->
+		<li><a href=""></a></li>
+		<!-- Start adding below here-->
+	</div>
+	<script src="scripts/limitListElements.js"></script>
+</body>
+</html>
